@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+      let nota1,nota2,nota3,nota4,nota5,nota6,nota7;
+      let dato1,dato2,dato3,dato4,dato5,dato6,dato7,calif,modulo,final;   
+      dato1 = window.prompt("La Calificacion de Calculo es");
+      nota1 = parseInt(dato1);
+      dato2 = window.prompt("La Calificacion de Ingles es");
+      nota2 = parseInt(dato2);
+      dato3 = window.prompt("La Calificacion de Ecologia es");
+      nota3 = parseInt(dato3);
+      dato4 = window.prompt("La Calificacion de Fisica es");
+      nota4 = parseInt(dato4);
+      dato5 = window.prompt("La Calificacion de Servidores es");
+      nota5 = parseInt(dato5);
+      dato6 = window.prompt("La Calificacion de Cliente es");
+      nota6 = parseInt(dato6);
+      dato7 = window.prompt("La Calificacion de Paginas Web es");
+      nota7 = parseInt(dato7);
+      calif = (nota1 + nota2 + nota3 + nota4 )/4;
+      console.log(calif);
+      if(calif < 6)
+         {
+         resultat = "Reprobado";
+         }
+         else
+         {
+         resultat = "Aprobado";
+         }
+         document.write(`<h3>La nota entre calculo,ingles,ecologia y fisica es ${resultat} </h3>`);
+      modulo = (nota5 + nota6 + nota7)/3
+      console.log(modulo);
+      if(modulo < 6)
+         {
+         resultat = "Reprobado";
+         }
+         else
+         {
+         resultat = "Aprobado";
+         }
+         document.write(`<h3>La nota final de modulo es ${resultat} </h3>`);
+         final = (nota1 + nota2 + nota3 + nota4 + nota5 + nota6 + nota7 )/7;
+         console.log(final);
+         if(final < 6)
+         {
+         resultat = "Reprobado";
+         }
+         else
+         {
+         resultat = "Aprobado";
+         }
+         document.write(`<h3>La nota final del parcial es ${resultat} </h3>`);
+    </script>
+  </head>
+</html>
